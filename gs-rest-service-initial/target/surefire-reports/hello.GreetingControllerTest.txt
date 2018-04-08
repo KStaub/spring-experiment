@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: hello.GreetingControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.575 s <<< FAILURE! - in hello.GreetingControllerTest
+getGreeting(hello.GreetingControllerTest)  Time elapsed: 0.37 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response content
+Expected: "Hello, World!"
+     but: was "{\"id\":1,\"content\":\"Hello, World!\"}"
+	at hello.GreetingControllerTest.getGreeting(GreetingControllerTest.java:34)
+
+getIndex(hello.GreetingControllerTest)  Time elapsed: 0.046 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response content
+Expected: "Hello, Welcome to the index!!"
+     but: was "{\"id\":2,\"content\":\"Hello, Welcome to the index!!\"}"
+	at hello.GreetingControllerTest.getIndex(GreetingControllerTest.java:28)
+
